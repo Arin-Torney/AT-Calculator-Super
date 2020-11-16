@@ -4,14 +4,21 @@
 #include <conio.h>
 using namespace std;
 
+int error() {
+  string f;
+  cout << "Wrong CODE!!! Enter \"a\" to reenter.";
+  cin >> f;
+  return (f == "a") ? 5 : 4;
+}
+
 int main() {
   long double x, z;
   string q;
-  cout << "AT Calculator Super\nEnter the code mathematical operation to be performed. For a list of all them along with their meanings, please type \"IDK\".\n";
+  cout << "AT Calculator Super\nEnter the code mathematical operation to be performed or mathematical constant to be displayed. For a list of all them along with their meanings, please type \"IDK\".\n";
   ant:
   getline(cin, q);
   if (q == "IDK") {
-    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tLogarithm\nSin\tSine\nCos\tCosine\nTan\tTangent\nAtan\tInverse Tangent\nPi\tPi\nEn\tNapier's Constant(also called Euler's Number)\nPhi\tGolden Ratio\nNow enter your mathematical operation code.\n";
+    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tLogarithm\nSin\tSine\nCos\tCosine\nTan\tTangent\nAtan\tInverse Tangent\nPi\tPi\nEn\tNapier's Constant(also called Euler's Number)\nPhi\tGolden Ratio\nNow enter your mathematical operation or constant value code.\n";
     goto ant;
   }
   else if ((q == "Add")||(q == "Subtract")||(q == "Prod")||(q == "Div")||(q == "Hypot")||(q == "Pow")||(q == "Rt")||(q == "Log")) {
@@ -63,10 +70,20 @@ int main() {
       z = atan(x);
     }
   }
-  else if ((q == "Pi")||(q == "En")||(q == "Phi") {
+  else if ((q == "Pi")||(q == "En")||(q == "Phi")) {
     if (q == "Pi") {
-      z = 3.14159265358979323846264338327950288419716939937510582097494;
+      z = M_PI; //3.14159265358979323846264338327950288419716939937510582097494;
     }
+    else if (q == "En") {
+      z = exp(1);
+    }
+    else if (q == "Phi") {
+      z = (1 + pow(5, 0.5)) / 2;
+    }
+  }
+  else {
+    
+  }
   getch();
   return 0;
 }
