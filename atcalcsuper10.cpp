@@ -8,7 +8,7 @@ int error() {
   string f;
   cout << "Wrong CODE!!! Enter \"a\" to reenter.";
   cin >> f;
-  cout << "\n\n"
+  cout << "\n\n";
   return (f == "a") ? 5 : 4;
 }
 
@@ -28,7 +28,7 @@ int main() {
     cout << "Enter first number.(decimals are allowed as input)\n";
     cin >> x;
     cout << "Enter second number.\n";
-    cin << y;
+    cin >> y;
     if (q == "Add") {
       z = x + y;
     }
@@ -94,7 +94,12 @@ int main() {
       string h;
       cout << "Do you really want to quit\? If yes, then enter \"a\".\n";
       cin >> h;
-      (h == "a") ? goto here : goto real;
+      if (h == "a") {
+        goto here;
+      }
+      else {
+        goto real;
+      }
     }
   }
   cout << "Answer is : " << z << endl << "\n\n";
