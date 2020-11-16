@@ -14,7 +14,7 @@ int error() {
 
 int main() {
   long double x, z;
-  string q;
+  string q, p;
   my:
   cout << "AT Calculator Super\nEnter the code mathematical operation to be performed or mathematical constant to be displayed. For a list of all them along with their meanings, please type \"IDK\".\n";
   ant:
@@ -97,7 +97,11 @@ int main() {
       (h == "a") ? goto here : goto real;
     }
   }
-  real:
+  cout << "Answer is : " << z << endl << "\n\n";
+  cout << "Need to calculate anything else? Enter \"b\" if you want to calculate.\n";
+  cin >> p;
+  goto my;
   getch();
+  real:
   return 0;
 }
