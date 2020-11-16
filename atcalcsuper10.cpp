@@ -9,7 +9,7 @@ int main() {
   cout << "AT Calculator Super\nEnter which mathematical operation is to be performed. For a list of all, please type \"IDK\".\n";
   getline(cin, q);
   if (q == "IDK") {
-    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tLogarithm\nSin\tSine\nCos\tCosine";
+    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tLogarithm\nSin\tSine\nCos\tCosine\nTan\tTangent\nAtan\tInverse Tangent\nPi\tPi\nE\tNapier's Constant(also called Euler's Number)\nPhi\tGolden Ratio\n";
   }
   getch();
   return 0;
