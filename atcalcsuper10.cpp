@@ -16,7 +16,7 @@ int main() {
   }
   else if ((q == "Add")||(q == "Subtract")||(q == "Prod")||(q == "Div")||(q == "Hypot")||(q == "Pow")||(q == "Rt")||(q == "Log")) {
     long double y;
-    cout << "Enter first number.\n";
+    cout << "Enter first number.(decimals are allowed as input)\n";
     cin >> x;
     cout << "Enter second number.\n";
     cin << y;
@@ -37,6 +37,32 @@ int main() {
     }
     else if (q == "Pow") {
       z = pow(x, y);
+    }
+    else if (q == "Rt") {
+      long double s;
+      s = 1 / y;
+      z = pow(x, s);
+    }
+    else if (q == "Log") {
+      z = log(y) / log(x);
+    }
+    else {
+    }
+  }
+  else if((q == "Sin")||(q == "Cos")||(q == "Tan")||(q == "Atan")) {
+    cout << "Enter one number.(decimals are allowed as input)";
+    cin >> x;
+    if (q == "Sin") {
+      z = sin(x);
+    }
+    else if (q == "Cos") {
+      z = cos(x);
+    }
+    else if (q == "Tan") {
+      z = tan(x);
+    }
+    else if (q == "Atan") {
+      z = atan(x);
     }
   }
   getch();
