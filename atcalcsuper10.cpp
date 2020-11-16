@@ -8,12 +8,14 @@ int error() {
   string f;
   cout << "Wrong CODE!!! Enter \"a\" to reenter.";
   cin >> f;
+  cout << "\n\n"
   return (f == "a") ? 5 : 4;
 }
 
 int main() {
   long double x, z;
   string q;
+  my:
   cout << "AT Calculator Super\nEnter the code mathematical operation to be performed or mathematical constant to be displayed. For a list of all them along with their meanings, please type \"IDK\".\n";
   ant:
   getline(cin, q);
@@ -82,8 +84,20 @@ int main() {
     }
   }
   else {
-    
+    int b;
+    here:
+    b = error();
+    if (b == 5) {
+      goto my;
+    }
+    else {
+      string h;
+      cout << "Do you really want to quit\? If yes, then enter \"a\".\n";
+      cin >> h;
+      (h == "a") ? goto here : goto real;
+    }
   }
+  real:
   getch();
   return 0;
 }
