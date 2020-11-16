@@ -8,5 +8,9 @@ int main() {
   string q;
   cout << "AT Calculator Super\nEnter which mathematical operation is to be performed. For a list of all, please type \"IDK\".\n";
   getline(cin, q);
+  if (q == "IDK") {
+    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tLogarithm\nSin\tSine\nCos\tCosine";
+  }
+  getch();
   return 0;
 }
