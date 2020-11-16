@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 #include <conio.h>
 using namespace std;
 
@@ -19,8 +20,23 @@ int main() {
     cin >> x;
     cout << "Enter second number.\n";
     cin << y;
-    if (q == "add") {
+    if (q == "Add") {
       z = x + y;
+    }
+    else if (q == "Minus") {
+      z = x - y;
+    }
+    else if (q == "Prod") {
+      z = x * y;
+    }
+    else if (q == "Div") {
+      z = x / y;
+    }
+    else if (q == "Hypot") {
+      z = hypot(x, y);
+    }
+    else if (q == "Pow") {
+      z = pow(x, y);
     }
   }
   getch();
