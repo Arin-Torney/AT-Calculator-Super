@@ -42,16 +42,8 @@ int main() {
     else if (q == "Div") {
       z = x / y;
     }
-    else if (q == "Hypot") {
-      z = hypot(x, y);
-    }
     else if (q == "Pow") {
       z = pow(x, y);
-    }
-    else if (q == "Rt") {
-      long double s;
-      s = 1 / y;
-      z = pow(x, s);
     }
     else if (q == "Log") {
       z = log(y) / log(x);
@@ -65,9 +57,6 @@ int main() {
     }
     else if (q == "Cos") {
       z = cos(x);
-    }
-    else if (q == "Tan") {
-      z = tan(x);
     }
     else if (q == "Atan") {
       z = atan(x);
