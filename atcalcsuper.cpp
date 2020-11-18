@@ -107,7 +107,7 @@ int main() {
       }
     }
   }
-  cout << "Answer is : " << setprecision(100) << z << endl << "\n\n";
+  cout << "Answer is : " << setprecision(120) << z << endl << "\n\n";
   cout << "Need to calculate anything else? Enter \"b\" if you want to calculate.\n";
   cin >> p;
   goto my;
