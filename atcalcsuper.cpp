@@ -60,6 +60,7 @@ int main() {
       y = pow(y, 2);
       z = x + y;
       z = pow(z, 0.5);
+    }
   }
   else if((q == "Sin")||(q == "Cos")||(q == "Tan")||(q == "Atan")||(q == "Log")) {
     cout << "Enter one number.(decimals are allowed as input)";
