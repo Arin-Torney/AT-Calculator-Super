@@ -21,10 +21,10 @@ int main() {
   ant:
   getline(cin, q);
   if (q == "IDK") {
-    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nRt\tRoot\nLog\tNatural Logarithm\nSin\tSine\nCos\tCosine\nTan\tTangent\nAtan\tInverse Tangent\nPi\tPi\nEn\tNapier's Constant(also called Euler's Number)\nPhi\tGolden Ratio\nNow enter your mathematical operation or constant value code.\n";
+    cout << "Add\tAddition\nMinus\tSubtraction\nProd\tMultiplication\nDiv\tDivision\nHypot\tHypotenuse\nPow\tExponent\nLog\tNatural Logarithm\nSin\tSine\nCos\tCosine\nTan\tTangent\nAtan\tInverse Tangent\nPi\tPi\nEn\tNapier's Constant(also called Euler's Number)\nPhi\tGolden Ratio\nNow enter your mathematical operation or constant value code.\n";
     goto ant;
   }
-  else if ((q == "Add")||(q == "Subtract")||(q == "Prod")||(q == "Div")||(q == "Hypot")||(q == "Pow")||(q == "Rt")||) {
+  else if ((q == "Add")||(q == "Subtract")||(q == "Prod")||(q == "Div")||(q == "Hypot")||(q == "Pow")) {
     long double y;
     cout << "Enter first number.(decimals are allowed as input)\n";
     cin >> x;
@@ -60,6 +60,7 @@ int main() {
     }
     else if (q == "Log") {
       z = log(x);
+    }
   }
   else if ((q == "Pi")||(q == "En")||(q == "Phi")) {
     if (q == "Pi") {
